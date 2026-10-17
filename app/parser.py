@@ -6,7 +6,7 @@ Hàm thuần túy, không đụng DB.
 import re
 from dataclasses import dataclass, field
 
-from alembic.environment import Literal
+from typing import Literal
 
 _MARKER_RE = re.compile(r"^@(me|chat):")
 _FENCE_OPEN_RE = re.compile(r"^ {0,3}(`{3,}|~{3,})(.*)$")
